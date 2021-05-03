@@ -1,16 +1,16 @@
-%Opening the file in read mode
+% Opening the file in read mode
 fid = fopen('C:/Users/Umang/Downloads/MATLAB/iris.txt','r');
 %Storing data in a cell array
 S = textscan(fid, '%f %f %f %f', 'Delimiter',' ');
-%Converted cell array to matrix
+% Converted cell array to matrix
 B = [S{:}];
-%Dividing the figure to embed three plots in same figure
+% Dividing the figure to embed three plots in same figure
 subplot(3,1,1)
-%Line Plot
+% Line Plot
 d = plot(B);
 props = {'Linewidth','LineStyle','MarkerSize'};
 vals = {2,':',10};
-%Setting the graphic object properties with new values
+% Setting the graphic object properties with new values
 set(d,props,vals);
 %Reading the graphic object properties
 get(d,props);
