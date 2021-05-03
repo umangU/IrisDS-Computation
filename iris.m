@@ -12,15 +12,15 @@ props = {'Linewidth','LineStyle','MarkerSize'};
 vals = {2,':',10};
 % Setting the graphic object properties with new values
 set(d,props,vals);
-%Reading the graphic object properties
+% Reading the graphic object properties
 get(d,props);
 subplot(3,1,2);
-%Bar Graph
+% Bar Graph
 bar(B);
 subplot(3,1,3);
-%3-D Stem Plot 
+% 3-D Stem Plot 
 stem3(B);
 fclose(fid);
-%Among the above three different types of plots, Line graphs is the best
-%way to describe the data as it primarily focuses on the trend and it makes 
-%it easier to compare changes over the same period and multiple values
+% Among the above three different types of plots, Line graphs is the best
+% way to describe the data as it primarily focuses on the trend and it makes 
+% it easier to compare changes over the same period and multiple values
