@@ -1,6 +1,6 @@
 % Opening the file in read mode
 fid = fopen('C:/Users/Umang/Downloads/MATLAB/iris.txt','r');
-%Storing data in a cell array
+% Storing data in a cell array
 S = textscan(fid, '%f %f %f %f', 'Delimiter',' ');
 % Converted cell array to matrix
 B = [S{:}];
@@ -21,6 +21,7 @@ subplot(3,1,3);
 % 3-D Stem Plot 
 stem3(B);
 fclose(fid);
+
 % Among the above three different types of plots, Line graphs is the best
 % way to describe the data as it primarily focuses on the trend and it makes 
 % it easier to compare changes over the same period and multiple values
